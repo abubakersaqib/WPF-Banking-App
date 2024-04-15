@@ -1,0 +1,35 @@
+﻿<Window x:Class="DBS_Bank.TransactionsForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TransactionsForm" Height="630" Width="860" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" ResizeMode="NoResize" >
+    <Grid>
+        <!-- Left Panel -->
+        <Grid Background="SkyBlue" Width="250" HorizontalAlignment="Left">
+            <TextBlock Text="Transactions" FontSize="22" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Center" Margin="0,30,0,0"/>
+
+            <StackPanel VerticalAlignment="Center" Margin="20">
+                <Button Content="Check Balance" FontSize="12" FontWeight="Bold" Width="200" Margin="0,0,0,10" Click="Check_Bal_btn_Click" BorderBrush="SkyBlue" Background="Transparent"/>
+                <Button Content="Deposit Funds" FontSize="12" FontWeight="Bold" Width="200" Margin="0,0,0,10" Click="Deposit_btn_Click" BorderBrush="SkyBlue" Background="Transparent"/>
+                <Button Content="Withdraw Funds" FontSize="12" FontWeight="Bold" Width="200" Margin="0,0,0,10" Click="Withdraw_btn_Click" BorderBrush="SkyBlue" Background="Transparent"/>
+                <Button Content="Transfer Funds" FontSize="12" FontWeight="Bold" Width="200" Margin="0,0,0,10" Click="Transfer_btn_Click" BorderBrush="SkyBlue" Background="Transparent"/>
+                <Button Content="View Transaction History" FontSize="12" FontWeight="Bold" Width="200" Margin="0,0,0,10" Click="History_btn_Click" BorderBrush="SkyBlue" Background="Transparent"/>
+                <Button Content="Back" FontSize="14" FontWeight="Bold" Width="100" Margin="0,10,0,0"  Click="Back_btn_Click" BorderBrush="SkyBlue" Background="Transparent"/>
+
+                <Image Source="C:\Users\Alpha\source\repos\DBS_Bank\DBS_Bank\Resources\bank_12202882.png" Height="155" Width="194" Margin="0,50,0,0"/>
+
+            </StackPanel>
+        </Grid>
+
+        <!-- Main Content -->
+        <Grid Margin="250,0,0,0">
+            <!-- Content -->
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,100">
+                <TextBlock Text="DUBLIN" FontSize="40" FontWeight="Bold" Foreground="SkyBlue"/>
+                <TextBlock Text="BUSINESS" FontSize="50" FontWeight="Bold" Foreground="SkyBlue"/>
+                <TextBlock Text="SCHOOL" FontSize="60" FontWeight="Bold" Foreground="SkyBlue"/>
+
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>

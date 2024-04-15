@@ -1,0 +1,25 @@
+﻿<Window x:Class="DBS_Bank.CheckBal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CheckBal" Height="400" Width="600" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
+    <Grid>
+
+        <!-- Main content -->
+        <Grid Background="LightBlue">
+            <Label Content="Balance Info" HorizontalAlignment="Center" FontSize="22" FontWeight="Bold" FontStyle="Italic" Margin="0,10,0,0"/>
+            <StackPanel Margin="10,50,0,0">
+                <Label Content="Enter Your Account Number" FontWeight="Bold" FontStyle="Italic" Width="167" HorizontalAlignment="Center"/>
+                <TextBox x:Name="AccNo_txt" Width="298" Background="LightGray"/>
+            </StackPanel>
+            <Button x:Name="Check_Bal_btn" FontStyle="Italic" FontWeight="Bold" Content="Check Balance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="206,112,0,0" Click="Check_Bal_btn_Click"/>
+            <StackPanel Margin="10,150,26,0" Height="81" VerticalAlignment="Top">
+                <Label Content="Your Account Balance is:" Width="183" Height="25" FontWeight="Bold" FontStyle="Italic"/>
+                <Label x:Name="Bal_lbl" Content="0000/." Width="178" />
+
+            </StackPanel>
+            <Button x:Name="Close_btn" Content="Close" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,275,94" Click="Close_btn_Click"/>
+            <Image Source="C:\Users\Alpha\source\repos\DBS_Bank\DBS_Bank\Resources\earth_13652093.png" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="99" Width="308"/>
+            <Image Source="C:\Users\Alpha\source\repos\DBS_Bank\DBS_Bank\Resources\bank_12202882.png" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="167" Width="201"/>
+        </Grid>
+    </Grid>
+</Window>

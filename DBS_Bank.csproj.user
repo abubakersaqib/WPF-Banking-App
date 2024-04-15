@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AccountsForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AllAccounts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CheckBal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CreateAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DepositFunds.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MenuForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SplashScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TransactionHistory.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TransactionsForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TransferFunds.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WithdrawFunds.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

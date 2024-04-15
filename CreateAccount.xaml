@@ -1,0 +1,125 @@
+﻿<Window x:Class="DBS_Bank.CreateAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Create Account" Height="600" Width="870" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="315.479"/>
+            <RowDefinition Height="Auto" MinHeight="0"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- Top portion for account details -->
+        <Grid Grid.Row="0" Background="SkyBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left side for inputs -->
+            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                <!-- First Name -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="First Name:" FontSize="14" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtFirstName" Width="150" Background="LightGray"/>
+
+
+                <!-- Surname -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Surname:" FontSize="14" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtSurname" Width="150" Background="LightGray"/>
+
+
+                <!-- Email -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Email:" FontSize="14" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtEmail" Width="150" Background="LightGray"/>
+
+
+                <!-- Phone -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Phone:" FontSize="14" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtPhone" Width="150" Background="LightGray"/>
+
+                <!-- Address Line 1 -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Postal Address:" FontSize="14" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtAddressLine1" Width="150" Height="38" Background="LightGray"/>
+
+                <!-- Address Line 2 -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Permanent Address:" FontSize="14" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtAddressLine2" Width="150" Height="42" Background="LightGray"/>
+
+
+
+            </StackPanel>
+
+            <!-- Right side for inputs -->
+            <StackPanel Grid.Column="1" Background="SkyBlue">
+                <!-- City -->
+                <StackPanel Orientation="Horizontal" Margin="35,0,0,5">
+                    <TextBlock Text="City:" FontSize="14" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtCity" Width="150" Margin="0,0,400,0" Background="LightGray"/>
+                <!-- County -->
+                <StackPanel Orientation="Horizontal" Margin="35,0,0,5">
+                    <TextBlock Text="County:" FontSize="14" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtCounty" Width="150" Margin="0,0,400,0" Background="LightGray"/>
+
+
+                <!-- Account Type -->
+                <StackPanel Orientation="Horizontal" Margin="35,0,0,5">
+                    <TextBlock Text="Account Type:" FontSize="14" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+
+                </StackPanel>
+                <RadioButton x:Name="rbCurrent" Content="Current" Margin="30,0,10,0" Background="LightGray"/>
+                <RadioButton x:Name="rbSavings" Content="Savings" Background="LightGray" Margin="30,5,10,0"/>
+
+                <!-- Account Number -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Account Number:" FontSize="14" FontWeight="Bold" Margin="35,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtAccountNumber" Width="150" Margin="0,0,400,0" Background="LightGray"/>
+
+                <!-- Sort Code -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Sort Code:" FontSize="14" FontWeight="Bold" Margin="35,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtSortCode" Width="150" Margin="0,0,400,0" Background="LightGray"/>
+
+                <!-- Initial Balance -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Initial Balance:" FontSize="14" FontWeight="Bold" Margin="35,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtInitialBalance" Width="150" Margin="0,0,400,0" Background="LightGray"/>
+
+                <!-- Overdraft Limit -->
+                <StackPanel x:Name="stackOverdraft"  Orientation="Horizontal" Margin="35,0,0,5">
+                    <TextBlock Text="Overdraft Limit:" FontSize="14" FontWeight="Bold" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBox x:Name="txtOverdraftLimit" Width="150" Margin="0,0,400,0" Background="LightGray"/>
+
+            </StackPanel>
+            <Button Content="Submit Details" FontStyle="Italic" FontWeight="Bold" Margin="532,218,22,69" Click="SubmitButton_Click" RenderTransformOrigin="6.809,4.61" Grid.Column="1"/>
+            <Button Content="Refresh" FontStyle="Italic" FontWeight="Bold" Click="RefreshButton_Click" HorizontalAlignment="Left" Margin="570,250,0,39" RenderTransformOrigin="0.444,0.587" Width="52" Height="25" Grid.Column="1"/>
+
+            <Button Content="Back" Width="52" Height="25" Margin="570,280,49,10" Click="BackButton_Click" Grid.Column="1" FontStyle="Italic" FontWeight="Bold"/>
+        </Grid>
+
+        <!-- Bottom portion for displaying grid -->
+        <Grid Grid.Row="2" Background="LightGray" Margin="0,18,0,18">
+            <!-- Data Grid -->
+            <DataGrid x:Name="dgAccounts" Grid.Row="0" AutoGenerateColumns="True" Margin="10" Background="LightGray"/>
+
+        </Grid>
+    </Grid>
+</Window>
