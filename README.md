@@ -1,2 +1,3 @@
 # WPF-Banking-App
-A C# WPF banking application for secure account management and transactions. Login, create, edit, and delete accounts, check balances, deposit funds, transfer money, and view transaction history with ease.
+WPF-Banking-App is a feature-rich banking application developed in C# using Windows Presentation Foundation (WPF). It provides users with a robust set of functionalities to manage their banking needs efficiently. With a user-friendly interface, the application allows users to securely log in, create new accounts, edit existing accounts, and delete accounts as needed.
+Beyond basic account management, users can perform various financial transactions seamlessly. They can check their account balances in real-time, make deposits, transfer funds between accounts, and view detailed transaction histories. The application prioritizes security and reliability, ensuring that sensitive financial data is handled securely throughout all interactions.
